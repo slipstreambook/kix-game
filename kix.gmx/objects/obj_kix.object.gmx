@@ -76,6 +76,10 @@ if (place_meeting(x,y+1,obj_wall))
     vsp = key_jump * -jumpspeed;
 }
 
+if (key_jump) &amp;&amp; (place_meeting(x+1,y,obj_wall) || place_meeting(x-1,y,obj_wall))
+{
+    vsp = -jumpspeed;
+}
 
 //horizontal collision
 if (place_meeting(x+hsp,y,obj_wall))
