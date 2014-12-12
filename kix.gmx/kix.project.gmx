@@ -8,14 +8,20 @@
   <sprites name="sprites">
     <sprite>sprites\spr_kix</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_warp</sprite>
+    <sprite>sprites\spr_spike</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_kix</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_warp</object>
+    <object>objects\obj_spike</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_test2</room>
+    <room>rooms\rm_test_run</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
