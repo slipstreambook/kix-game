@@ -64,7 +64,6 @@ jumpspeed = jumpspeed_normal;
 key_right = keyboard_check(ord("D"));
 key_left = -keyboard_check(ord("A"));
 key_jump = keyboard_check_pressed(vk_space);
-key_run = keyboard_check_pressed(ord("W"));
 
 //react to inputs
 
@@ -77,11 +76,6 @@ if (place_meeting(x,y+1,obj_wall))
     vsp = key_jump * -jumpspeed;
 }
 
-if (key_run) &amp;&amp; (place_meeting(x,y+1,obj_wall))
-{
-    movespeed = movespeed_run;
-    jumpspeed = jumpspeed_run;
-}
 
 //horizontal collision
 if (place_meeting(x+hsp,y,obj_wall))
@@ -105,6 +99,52 @@ if (place_meeting(x,y+vsp,obj_wall))
    
 }
 y += vsp;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="87">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>movespeed = movespeed_run;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="87">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>movespeed = movespeed_normal;
 </string>
           </argument>
         </arguments>
